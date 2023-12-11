@@ -15,15 +15,15 @@ namespace AQLFINAL2
             //initialisations des 3 listes d'objets (listeDetudiant, listeDesCours, listeDesNotes) qu'on pourra manipuler simplent 
 
             List<Etudiant> listeDetudiant = new List<Etudiant>()
-        { new Etudiant ("deezy", "466535", "exau"),  new Etudiant ("jake", "445723", "cloe"), new Etudiant ("beni", "464321", "panda") , new Etudiant ("maboy", "432195", "harry")};
+        { new Etudiant ("john", "271348", "smith"),  new Etudiant ("emma", "271309", "johnson"), new Etudiant ("alex", "271145", "brown") , new Etudiant ("sophie", "271195", "miller")};
 
 
             List<Cours> listeDesCours = new List<Cours>()
-        { new Cours ("897hj", "1125", "Projet integration"), new Cours ("867ho", "1126", "ASQ"), new Cours ("947ij", "1127", "Statistique"), new Cours ("898ft", "1128", "Base de donnee")};
+        { new Cours ("837fj", "1129", "programmation"), new Cours ("457lj", "1130", "web client"), new Cours ("127ij", "1131", "android"), new Cours ("823ht", "1132", "gestion")};
 
 
             List<Notes> listeDesNotes = new List<Notes>()
-        { new Notes ("1125", "897hj", "A+"), new Notes ("1126", "867ho", "C"), new Notes ("1127", "947ij", "B-"), new Notes ("1128", "898ft", "F") };
+        { new Notes ("1129", "837fj", "B+"), new Notes ("1130", "457lj", "A"), new Notes ("1131", "127ij", "C+"), new Notes ("1132", "823ht", "A+") };
 
 
             
