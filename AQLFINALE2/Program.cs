@@ -113,6 +113,32 @@ namespace AQLFINAL2
                 this.note = note;
 
             }
+              
+    // Méthode pour enregistrer uu contenu dans un fichier
+    
+}
+public void EnregistrerFichier(string contenu, string cheminDuFichier)
+{
+    try
+    {
+        if (File.Exists(cheminDuFichier))
+        {
+            // Remplacement du contenu d'un fichier existant
+            File.WriteAllText(cheminDuFichier, contenu);
+            Console.WriteLine($"Le fichier '{cheminDuFichier}' a été remplacé avec succès! ");
+        }
+        else
+        {
+            //Creation d'un nouveau fichier avec le contenu 
+            File.WriteAllText(cheminDuFichier, contenu);
+            Console.WriteLine($"Le fichier '{cheminDuFichier}'a été crée avec succès! ");
+        }
+    }
+    catch (Exception ex)
+    {
+        // Gestion des exceptions en affichant un message d'erreur
+        Console.WriteLine($"Une erreur s'est produite: {ex.Message}");
+    }
 
 
         }
